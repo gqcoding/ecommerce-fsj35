@@ -1,0 +1,1 @@
+export default function Loading() { return <section className="page-section"><div className="page-heading"><span className="eyebrow">CHECKOUT</span><h1>Preparando tu compra...</h1></div><div className="skeleton-card"><div className="skeleton-line"/><div className="skeleton-line"/><div className="skeleton-line short"/></div></section>; }

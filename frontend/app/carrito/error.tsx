@@ -1,0 +1,2 @@
+"use client";
+export default function Error({ reset }: { error: Error & { digest?: string }; reset: () => void }) { return <section className="page-section"><div className="empty-state"><h1>No pudimos abrir el carrito</h1><button className="button button-primary" onClick={() => reset()}>Intentar de nuevo</button></div></section>; }

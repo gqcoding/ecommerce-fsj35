@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+vendor/
+.DS_Store
+storage/logs/*.log
+*.sqlite
+*.sqlite-*

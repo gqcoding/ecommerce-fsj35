@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { CheckCircle2, PackageCheck } from "lucide-react";
+export default async function CheckoutSuccessPage({ searchParams }: { searchParams: Promise<{ session_id?: string }> }) {
+  const { session_id } = await searchParams;
+  return <section className="success-page"><div className="success-card"><div className="success-icon"><CheckCircle2 size={42}/></div><span className="eyebrow">PROCESO DE PAGO</span><h1>Volviste de Stripe</h1><p>Stripe redirigió el navegador a esta página. Para confirmar el pago definitivamente, la API debe verificar la sesión o recibir el webhook correspondiente.</p>{session_id && <p className="session-id">Sesión: {session_id}</p>}<div className="success-warning"><PackageCheck size={18}/> Confirma el estado de la orden en tu historial antes de considerar el pago completado.</div><Link className="button button-primary button-wide" href="/compras">Ver mis compras</Link><Link className="text-link" href="/productos">Seguir comprando</Link></div></section>;
+}

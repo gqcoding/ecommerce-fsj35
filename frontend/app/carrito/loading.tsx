@@ -1,0 +1,1 @@
+export default function Loading() { return <section className="page-section"><div className="page-heading"><h1>Cargando carrito...</h1></div><div className="skeleton-card"><div className="skeleton-line"/><div className="skeleton-line short"/></div></section>; }

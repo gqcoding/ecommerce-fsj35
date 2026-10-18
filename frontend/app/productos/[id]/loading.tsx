@@ -1,0 +1,1 @@
+export default function Loading() { return <section className="page-section"><div className="skeleton-card"><div className="skeleton-image"/><div className="skeleton-line"/></div></section>; }

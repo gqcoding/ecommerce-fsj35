@@ -1,0 +1,2 @@
+"use client";
+export default function Error({ reset }: { error: Error & { digest?: string }; reset: () => void }) { return <section className="page-section"><div className="empty-state"><h1>No pudimos cargar los productos</h1><p>Verifica la conexión con la API e inténtalo de nuevo.</p><button className="button button-primary" onClick={() => reset()}>Intentar de nuevo</button></div></section>; }

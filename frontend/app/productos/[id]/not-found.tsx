@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function NotFound() { return <section className="page-section"><div className="empty-state"><h1>Producto no encontrado</h1><p>Puede que el producto ya no esté disponible.</p><Link className="button button-primary" href="/productos">Volver al catálogo</Link></div></section>; }

@@ -1,0 +1,2 @@
+"use client";
+export default function Error({ reset }: { error: Error & { digest?: string }; reset: () => void }) { return <section className="page-section"><div className="empty-state"><h1>Hubo un problema con el checkout</h1><p>No se pudo completar esta operación. Tu compra no debe considerarse confirmada hasta verificar la respuesta de la API.</p><button className="button button-primary" onClick={() => reset()}>Intentar de nuevo</button></div></section>; }
